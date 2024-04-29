@@ -1,0 +1,169 @@
+
+.container {
+    max-width: 960px;
+    margin: 0px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}   
+
+.align-items-center {
+    align-items: center;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.15;
+    color: #111;
+}
+
+#header {
+    height: 60px;
+    position: relative;
+}
+
+nav {
+    background: #2c2c32;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar-brand {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+
+
+#navbar-brand #logo {
+    max-height: 40px;
+    width: auto;
+}
+
+ul#main-menu {
+    display: flex;
+    list-style: none;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+ul#main-menu a {
+    color: #9d9d9d;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+ul#main-menu li:hover a {
+    color: #fff;
+} 
+
+#download {
+    background-color: #0e7bd3;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 30px;
+    position: relative;
+    display: none;
+}
+
+#download:hover {
+    background-color: #005ba4;
+}
+
+#download::before {
+    font-family: fontawesome;
+    font-weight: 900;
+    content: "\f063";
+    position: absolute;
+    font-size: 18px;
+    left: 10px;
+}
+
+#navbar-toggle {
+    font-size: 24px;
+    color: #fff;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+#wp-content {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* padding: 40px 0px; */
+}
+
+#wp-content h1 {
+    margin-bottom: 20px;
+}
+
+ul#responsive-menu {
+    position: absolute;
+    list-style: none;
+    background-color: #3c3c43;
+    padding-left: 0px;
+    left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 60px;
+    width: 100%;
+    display: none;
+}
+
+ul#responsive-menu li a{
+    color: #9d9d9d;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+ul#responsive-menu li:hover a {
+    color: #fff;
+}
+
+
+@media (min-width: 576px) {
+    body {
+        background: green;
+    }
+}
+/* Medium devices (tables, 768px and up) */
+
+@media (min-width: 768px) {
+    body {
+        background: yellow;
+    }
+}
+/* large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    #download {
+        display: block;
+    }
+    ul#main-menu {
+        display: flex;
+    }
+    #navbar-toggle {
+        display: none;
+    }
+}
+/* Extra large devices (larger desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    body {
+        background: tomato;
+    }
+}

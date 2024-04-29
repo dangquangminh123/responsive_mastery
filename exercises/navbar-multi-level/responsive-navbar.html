@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <title>Responsive navbar</title>
+</head>
+<body>
+     <!-- menu đa cấp
+        1. Tạo sub-menu và ý tưởng css
+        2. Định dạng hiển thị sub menu
+        3. Xử lý hover ẩn hiện sub menu
+        4. Tạo sub menu responsive
+        5. Định dạng hiển thị sub menu responsive
+        6. Ý tưởng ẩn hiện sub menu
+        7. Tạo icon toggle
+        8. Xử lý js ẩn hiện menu
+        9. Ẩn sub menu khi resize và scroll    
+    -->
+     <div id="wrapper">
+        <div id="header">
+            <nav>
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a href="#" id="navbar-brand">
+                        <img src="./images/logo_vsc.png" alt="logo" id="logo"/>
+                        <span>
+                            Visual Studio Code
+                        </span>
+                    </a>
+
+                    <ul id="main-menu">
+                        <li><a href="#">Code</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Menu item 1</a></li>
+                                <li><a href="">Menu item 2</a></li>
+                                <li><a href="">Menu item 3</a></li>
+                                <li><a href="">Menu item 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">API</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Menu item 1</a></li>
+                                <li><a href="">Menu item 2</a></li>
+                                <li><a href="">Menu item 3</a></li>
+                                <li><a href="">Menu item 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Extension</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+                    <a href="#" id="download">Download</a>
+
+                    <ul id="responsive-menu">
+                        <li><a href="#">Code</a>
+                            <i class="responsive-menu-toggle fa-solid fa-chevron-down"></i>
+                            <ul class="sub-menu">
+                                <li><a href="">Menu item 1</a></li>
+                                <li><a href="">Menu item 2</a></li>
+                                <li><a href="">Menu item 3</a></li>
+                                <li><a href="">Menu item 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">API</a>
+                            <i class="responsive-menu-toggle fa-solid fa-chevron-down"></i>
+                            <ul class="sub-menu">
+                                <li><a href="">Menu item 1</a></li>
+                                <li><a href="">Menu item 2</a></li>
+                                <li><a href="">Menu item 3</a></li>
+                                <li><a href="">Menu item 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Extension</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                    <div id="navbar-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End Header -->
+
+        <!-- Wp-content -->
+        <div id="wp-content" class="container">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, dolores.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, dolores.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, dolores.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+        </div>
+        <!-- End wp-content -->
+
+        <div id="footer">
+
+        </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="js/main.js"></script>
+</body>
+</html>

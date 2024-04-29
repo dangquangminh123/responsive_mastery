@@ -1,0 +1,121 @@
+    body {
+        margin: 0;
+    }
+    
+    #wrapper {
+        max-width: 960px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto;
+    }
+    
+    .header {
+        flex-basis: 100%;
+        flex-grow: 1;
+        background-color: brown;
+        padding: 17px 0px;
+        color: yellow;
+    }
+    
+    .wp-content {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #95a5a6;
+        height: 674px;
+    }
+    
+    .wp-content .content {
+        flex-grow: 5;
+        padding: 10px 15px;
+        flex-shrink: 2;
+        flex-basis: 100%;
+        background-color: gray;
+        box-sizing: border-box;
+    }
+    
+    .wp-content .sidebar {
+        flex-basis: 100%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        flex-grow: 3;
+        flex-shrink: 1;
+        background-color: #333;
+    }
+    
+    .footer {
+        flex-basis: 100%;
+        padding: 17px;
+        flex-grow: 1;
+        background-color: brown;
+        color: yellow;
+    }
+    
+    .f-20 {
+        font-size: 20px;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    /* Responsive theo kiểu mobile first */
+    
+    @media (min-width: 576px) {
+        .wp-content .content {
+            flex-basis: 70%;
+        }
+        .wp-content .sidebar {
+            flex-basis: 30%;
+        }
+    }
+    /* Medium devices (tables, 768px and up) */
+    
+    @media (min-width: 768px) {
+        body {
+            background: yellow;
+        }
+    }
+    /* large devices (desktops, 992px and up) */
+    
+    @media (min-width: 992px) {
+        body {
+            background: tomato;
+        }
+    }
+    /* Extra large devices (larger desktops, 1200px and up) */
+    
+    @media (min-width: 1200px) {
+        body {
+            /* background: blue; */
+        }
+    }
+    /* End responsive mobile first */
+    /* Responsive PC FIRST */
+    /* @media (max-width: 1199.98px) {
+        body {
+            background: yellow;
+        }
+    } */
+    /* Medium devices (tablets, less than 992px) */
+    /* @media (max-width: 991.98px) {
+        body {
+            background: tomato;
+        }
+    } */
+    /* samll devices (landscape phone, less than 768px) */
+    /* @media (max-width: 767.98px) {
+        body {
+            background: green;
+        }
+    } */
+    /* Extra small devices (portrait phone, less than 576px) */
+    /* @media (max-width: 575.98px) {
+         .wp-content .content {
+            flex-basis: 100%;
+        }
+    
+        .wp-content .sidebar {
+            flex-basis: 100%;
+        }
+    } */
+    /* End Responsive PC FIRST */

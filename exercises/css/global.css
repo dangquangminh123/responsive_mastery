@@ -1,0 +1,46 @@
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.container-fuild {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}

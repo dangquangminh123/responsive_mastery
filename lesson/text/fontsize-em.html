@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONTSIZE EM</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-size: 12px;
+        }
+        
+        #wrapper {
+            font-size: 20px;
+        }
+        
+        h1 {
+            /* 1 em là khoảng 16px, đơn vị em thì lệ thuộc vào kích thước của thằn cha bên ngoài chứa nó,
+            khi không có wrapper thiết lập fontsize thì sẽ dựa theo kích thước của body*/
+            font-size: 2.5em;
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Font size em responsive</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem praesentium culpa veniam cum dolorem? Est inventore eum dignissimos voluptas officiis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem praesentium culpa veniam cum dolorem? Est inventore eum dignissimos voluptas officiis!</p>
+    </div>
+</body>
+
+</html>

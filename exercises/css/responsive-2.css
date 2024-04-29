@@ -1,0 +1,42 @@
+ /* Từ 0px tới 576px */
+ 
+ #wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 50vh;
+     margin: 0px auto;
+ }
+ 
+ h1 {
+     font-size: 22px;
+     letter-spacing: 2px;
+ }
+ /* Small devices (landscape phones, 576px and up) */
+ 
+ @media (min-width: 576px) {
+     h1 {
+         font-size: 30px;
+     }
+ }
+ /* Medium devices (tables, 768px and up) */
+ 
+ @media (min-width: 768px) {
+     h1 {
+         font-size: 35px;
+     }
+ }
+ /* large devices (desktops, 992px and up) */
+ 
+ @media (min-width: 992px) {
+     h1 {
+         font-size: 42px;
+     }
+ }
+ /* Extra large devices (larger desktops, 1200px and up) */
+ 
+ @media (min-width: 1200px) {
+     h1 {
+         font-size: 42px;
+     }
+ }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <title>Responsive navbar</title>
+</head>
+<body>
+    <!-- 
+        1.Tạo file cấu trúc thư mục
+        2.tạo các file css và import vào html
+        3. thêm reset css vào dự án
+        4. định nghĩa class dùng chung
+        5. tạo cấu trúc html của website
+        6. style navbar-brand
+        7. style css main menu
+        8. style css download
+        9. style css content
+        10. cố định thành navbar
+        11. tư duy áp dụng mobile first responsive giao diện
+        12. ẩn phần tử không cần thiết ở thiết bị nhỏ
+        13. xuất hiện icons-navbar-toggle trên thiết bị nhỏ
+        14. Tạo responsive menu
+        15. Phân tích sự kiện khi bấm vào navbar toggle
+        16. Xử lý sự kiện khi bấm vào navbar toggle
+        17. Tự động ẩn menu khi resize và scroll
+        18. tổng kết
+     -->
+     <div id="wrapper">
+        <div id="header">
+            <nav>
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a href="#" id="navbar-brand">
+                        <img src="./images/logo_vsc.png" alt="logo" id="logo"/>
+                        <span>
+                            Visual Studio Code
+                        </span>
+                    </a>
+
+                    <ul id="main-menu">
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Extension</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+                    <a href="#" id="download">Download</a>
+                    <ul id="responsive-menu">
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Extension</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+                    <div id="navbar-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End Header -->
+
+        <!-- Wp-content -->
+        <div id="wp-content" class="container">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, dolores.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, dolores.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, dolores.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi illo molestias dolorum, omnis accusantium iure sit voluptatum aliquid quod!</p>
+        </div>
+        <!-- End wp-content -->
+
+        <div id="footer">
+
+        </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="js/main.js"></script>
+</body>
+</html>
